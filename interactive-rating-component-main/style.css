@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+Img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  font-size: 0.9rem;
+  color: hsl(0, 0%, 100%);
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(216, 12%, 8%);
+  /* margin: 1.5rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+p {
+  color: hsl(217, 12%, 63%);
+  line-height: 1.8;
+}
+/* rating state start */
+.main-container,
+.thankYou {
+  max-width: 30%;
+  border-radius: 1rem;
+  padding: 2rem;
+  background: linear-gradient(hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+  display: grid;
+  gap: 2rem;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.main-container img {
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+  padding: 1rem;
+}
+.main-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-container ul li button {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: none;
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.main-container ul li button:hover {
+  background-color: hsl(25, 97%, 53%);
+}
+.main-container ul li button:focus {
+  background-color: hsl(216, 12%, 54%);
+}
+.btnSubmit {
+  border: none;
+  border-radius: 30px;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  padding: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btnSubmit:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+.thank-you img {
+}
+
+/* rating state end */
+
+/* thank you  start */
+.thankYou {
+  display: grid;
+  justify-items: center;
+}
+.thank-you h1.thanks {
+  text-align: center;
+}
+.thank-you p.selection {
+  border-radius: 30px;
+  width: 100%;
+  padding: 0.4rem;
+  text-align: center;
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(25, 97%, 53%);
+}
+.thank-you p {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+/* thank you  end */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(213, 19%, 18%);
+}
+.attribution a {
+  color: hsl(216, 12%, 54%);
+}
