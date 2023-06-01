@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  line-height: 1;
+  background-color: white;
+}
+h1 {
+  font-size: 60px;
+}
+h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+h1,
+h2 {
+  color: hwb(0 100% 0%);
+}
+h3,
+.text,
+.hundred {
+  color: hsl(241, 100%, 89%);
+}
+h3,
+h4 {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+h4 {
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  border-radius: 30px;
+}
+.result {
+  width: 250px;
+  background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  text-align: center;
+  padding: 30px;
+  border-radius: 30px;
+}
+.summary {
+  width: 250px;
+  padding: 30px;
+  border-radius: 0 30px 30px 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.number {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  padding: 30px;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+.reaction,
+.memory,
+.verbal,
+.visual {
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.reaction {
+  background-color: hsla(0, 100%, 67%, 0.126);
+  color: hsl(0, 100%, 67%);
+}
+.memory {
+  background-color: hsl(39, 100%, 56%, 0.126);
+  color: hsl(39, 100%, 56%);
+}
+.verbal {
+  background-color: hsl(166, 100%, 37%, 0.126);
+  color: hsl(166, 100%, 37%);
+}
+.visual {
+  background-color: hsl(234, 85%, 45%, 0.126);
+  color: hsl(234, 85%, 45%);
+}
+img {
+  display: inline;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+#name {
+  text-align: left;
+}
+#score {
+  text-align: right;
+  color: black;
+}
+button {
+  border: 0;
+  border-radius: 20px;
+  background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  width: 100%;
+  padding: 10px;
+  color: white;
+}
+
+button:hover {
+  background: linear-gradient(180deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+  color: black;
+  cursor: pointer;
+}
+.attribution {
+  margin-top: 40px;
+}
