@@ -1,0 +1,117 @@
+/* Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%) */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+Img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  color: white;
+  display: grid;
+  justify-content: center;
+}
+h1 {
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: hsl(0, 0%, 95%);
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  max-width: 1125px;
+  margin-top: 60px;
+}
+.sedansContainer {
+  background-color: hsl(31, 77%, 52%);
+}
+.suvsContainer {
+  background-color: hsl(184, 100%, 22%);
+}
+.luxuryContainer {
+  background-color: hsl(179, 100%, 13%);
+}
+.sedansContainer,
+.suvsContainer,
+.luxuryContainer {
+  padding: 50px;
+  display: grid;
+  justify-content: space-between;
+  gap: 40px;
+  width: 300px;
+  line-height: 1.5rem;
+}
+.sedansContainer p,
+.suvsContainer p,
+.luxuryContainer p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+button {
+  margin-top: 30px;
+  border: none;
+  border-radius: 100vw;
+  padding: 15px;
+  text-transform: capitalize;
+  font-weight: 700;
+  width: 150px;
+  background-color: hsl(0, 0%, 95%);
+  cursor: grab;
+}
+.sedansContainer button {
+  color: hsl(31, 77%, 52%);
+  border: 2px solid;
+}
+.suvsContainer button {
+  color: hsl(184, 100%, 22%);
+  border: 2px solid;
+}
+.luxuryContainer button {
+  color: hsl(179, 100%, 13%);
+  border: 2px solid;
+}
+button:hover {
+  color: hsl(0, 0%, 95%);
+  border: 2px solid;
+}
+.sedansContainer button:hover {
+  background-color: hsl(31, 77%, 52%);
+}
+.suvsContainer button:hover {
+  background-color: hsl(184, 100%, 22%);
+}
+.luxuryContainer button:hover {
+  background-color: hsl(179, 100%, 13%);
+}
+.attribution {
+  margin-top: 20px;
+  font-size: 11px;
+  text-align: center;
+  color: black;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media only screen and (max-width: 375px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    margin: 10px;
+  }
+}
